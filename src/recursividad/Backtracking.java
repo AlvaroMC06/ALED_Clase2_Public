@@ -1,4 +1,4 @@
-package recursividad;
+	package recursividad;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ public class Backtracking {
 	public static void backtracking(int[] arr, int objetivo, 
 			int acumulado, List<Integer> solucion) {
 		
-		if (acumulado == objetivo) {
+if (acumulado == objetivo) {
 			System.out.println(solucion);
 			return;
 		}
@@ -27,12 +27,12 @@ public class Backtracking {
 		
 			// Volver
 			solucion.remove(solucion.size() - 1);
-		}
+}
 		
 	}
 	
 	public static void main(String[] args) {
-		backtracking(new int[] {1, 2, 3}, 4, 0, 
+		backtracking(new int[] {2, 6, 4, 5, 3, 3, 1,5}, 12, 5, 
 				new ArrayList<>());;
 	}
 }
